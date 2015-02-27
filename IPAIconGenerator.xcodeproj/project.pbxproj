@@ -12,6 +12,11 @@
 		DD1092231AA078A200D434FD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD1092221AA078A200D434FD /* Images.xcassets */; };
 		DD1092261AA078A200D434FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD1092241AA078A200D434FD /* Main.storyboard */; };
 		DD1092321AA078A200D434FD /* IPAIconGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1092311AA078A200D434FD /* IPAIconGeneratorTests.swift */; };
+		DD10923C1AA0801400D434FD /* IGImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD10923B1AA0801400D434FD /* IGImageModel.swift */; };
+		DD10923E1AA0816400D434FD /* IGIPhoneScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD10923D1AA0816400D434FD /* IGIPhoneScope.swift */; };
+		DD1092401AA0817700D434FD /* IGIPadScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD10923F1AA0817700D434FD /* IGIPadScope.swift */; };
+		DD1092421AA0818000D434FD /* IGCarPlayScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1092411AA0818000D434FD /* IGCarPlayScope.swift */; };
+		DDCE56A71AA09625000E92F1 /* IGMacOSScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCE56A61AA09625000E92F1 /* IGMacOSScope.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,11 @@
 		DD10922B1AA078A200D434FD /* IPAIconGeneratorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IPAIconGeneratorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD1092301AA078A200D434FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD1092311AA078A200D434FD /* IPAIconGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPAIconGeneratorTests.swift; sourceTree = "<group>"; };
+		DD10923B1AA0801400D434FD /* IGImageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGImageModel.swift; sourceTree = "<group>"; };
+		DD10923D1AA0816400D434FD /* IGIPhoneScope.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGIPhoneScope.swift; sourceTree = "<group>"; };
+		DD10923F1AA0817700D434FD /* IGIPadScope.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGIPadScope.swift; sourceTree = "<group>"; };
+		DD1092411AA0818000D434FD /* IGCarPlayScope.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGCarPlayScope.swift; sourceTree = "<group>"; };
+		DDCE56A61AA09625000E92F1 /* IGMacOSScope.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGMacOSScope.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +90,11 @@
 				DD1092221AA078A200D434FD /* Images.xcassets */,
 				DD1092241AA078A200D434FD /* Main.storyboard */,
 				DD10921C1AA078A200D434FD /* Supporting Files */,
+				DD10923B1AA0801400D434FD /* IGImageModel.swift */,
+				DD10923D1AA0816400D434FD /* IGIPhoneScope.swift */,
+				DD10923F1AA0817700D434FD /* IGIPadScope.swift */,
+				DD1092411AA0818000D434FD /* IGCarPlayScope.swift */,
+				DDCE56A61AA09625000E92F1 /* IGMacOSScope.swift */,
 			);
 			path = IPAIconGenerator;
 			sourceTree = "<group>";
@@ -209,7 +224,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD1092211AA078A200D434FD /* ViewController.swift in Sources */,
+				DDCE56A71AA09625000E92F1 /* IGMacOSScope.swift in Sources */,
+				DD1092421AA0818000D434FD /* IGCarPlayScope.swift in Sources */,
 				DD10921F1AA078A200D434FD /* AppDelegate.swift in Sources */,
+				DD1092401AA0817700D434FD /* IGIPadScope.swift in Sources */,
+				DD10923C1AA0801400D434FD /* IGImageModel.swift in Sources */,
+				DD10923E1AA0816400D434FD /* IGIPhoneScope.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +417,7 @@
 				DD1092371AA078A300D434FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD1092381AA078A300D434FD /* Build configuration list for PBXNativeTarget "IPAIconGeneratorTests" */ = {
 			isa = XCConfigurationList;
@@ -405,6 +426,7 @@
 				DD10923A1AA078A300D434FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
