@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6254"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7706"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -669,11 +669,11 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="IPAIconGenerator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="309"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pGp-lB-K32">
-                                <rect key="frame" x="179" y="57" width="122" height="19"/>
+                                <rect key="frame" x="179" y="96" width="122" height="19"/>
                                 <buttonCell key="cell" type="roundRect" title="Choose Image" bezelStyle="roundedRect" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ld5-ls-9t4">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="cellTitle"/>
@@ -683,7 +683,7 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lqT-o3-qfF">
-                                <rect key="frame" x="179" y="19" width="122" height="19"/>
+                                <rect key="frame" x="179" y="58" width="122" height="19"/>
                                 <buttonCell key="cell" type="roundRect" title="Generate" bezelStyle="roundedRect" alignment="center" enabled="NO" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="BPn-Aq-dUY">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="cellTitle"/>
@@ -693,36 +693,43 @@
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R4g-Kh-5Vp">
-                                <rect key="frame" x="18" y="78" width="106" height="18"/>
+                                <rect key="frame" x="18" y="137" width="106" height="18"/>
                                 <buttonCell key="cell" type="check" title="IPhone" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="lEx-kJ-WXa">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wpd-BQ-RqS">
-                                <rect key="frame" x="18" y="50" width="61" height="18"/>
-                                <buttonCell key="cell" type="check" title="IPad" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="qEI-qI-kem">
+                                <rect key="frame" x="18" y="109" width="61" height="18"/>
+                                <buttonCell key="cell" type="check" title="IPad" bezelStyle="regularSquare" imagePosition="left" inset="2" id="qEI-qI-kem">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Hl-U5-ON6">
-                                <rect key="frame" x="18" y="20" width="85" height="18"/>
-                                <buttonCell key="cell" type="check" title="CarPlay" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="faQ-by-eFy">
+                                <rect key="frame" x="18" y="79" width="85" height="18"/>
+                                <buttonCell key="cell" type="check" title="CarPlay" bezelStyle="regularSquare" imagePosition="left" inset="2" id="faQ-by-eFy">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S7h-Uc-rZV">
-                                <rect key="frame" x="163" y="145" width="154" height="105"/>
+                                <rect key="frame" x="163" y="184" width="154" height="105"/>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSApplicationIcon" id="9VC-W1-5RN"/>
                             </imageView>
                             <progressIndicator hidden="YES" fixedFrame="YES" maxValue="100" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="0rf-Fi-3TX">
-                                <rect key="frame" x="163" y="118" width="154" height="20"/>
+                                <rect key="frame" x="163" y="157" width="154" height="20"/>
                             </progressIndicator>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yVs-8B-Adr">
+                                <rect key="frame" x="18" y="50" width="106" height="18"/>
+                                <buttonCell key="cell" type="check" title="AppleWatch" bezelStyle="regularSquare" imagePosition="left" inset="2" id="N5I-GP-abk">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qN1-2M-uJs">
-                                <rect key="frame" x="18" y="108" width="85" height="18"/>
-                                <buttonCell key="cell" type="check" title="MacOS" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="loM-fE-jOC">
+                                <rect key="frame" x="18" y="167" width="85" height="18"/>
+                                <buttonCell key="cell" type="check" title="MacOS" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="loM-fE-jOC">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
@@ -733,6 +740,7 @@
                         <outlet property="CarPlayCB" destination="7Hl-U5-ON6" id="1Gb-BA-6pm"/>
                         <outlet property="IPadCB" destination="wpd-BQ-RqS" id="UUO-fr-kt6"/>
                         <outlet property="IPhoneCB" destination="R4g-Kh-5Vp" id="Ine-tH-KAE"/>
+                        <outlet property="appWatchCB" destination="yVs-8B-Adr" id="zZN-fP-K4Z"/>
                         <outlet property="generateButton" destination="lqT-o3-qfF" id="mb4-V1-cIn"/>
                         <outlet property="macOsCB" destination="qN1-2M-uJs" id="y7H-SW-UCC"/>
                         <outlet property="preview" destination="S7h-Uc-rZV" id="MzQ-M3-agc"/>
@@ -741,7 +749,7 @@
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="74" y="673"/>
+            <point key="canvasLocation" x="74" y="692.5"/>
         </scene>
     </scenes>
     <resources>

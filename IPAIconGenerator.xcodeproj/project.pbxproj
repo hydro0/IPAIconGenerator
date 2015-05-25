@@ -17,6 +17,7 @@
 		DD1092401AA0817700D434FD /* IGIPadScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD10923F1AA0817700D434FD /* IGIPadScope.swift */; };
 		DD1092421AA0818000D434FD /* IGCarPlayScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1092411AA0818000D434FD /* IGCarPlayScope.swift */; };
 		DDCE56A71AA09625000E92F1 /* IGMacOSScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCE56A61AA09625000E92F1 /* IGMacOSScope.swift */; };
+		DDF9E96D1B13492A00BA876A /* IGAppWatchScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF9E96C1B13492A00BA876A /* IGAppWatchScope.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		DD10923F1AA0817700D434FD /* IGIPadScope.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGIPadScope.swift; sourceTree = "<group>"; };
 		DD1092411AA0818000D434FD /* IGCarPlayScope.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGCarPlayScope.swift; sourceTree = "<group>"; };
 		DDCE56A61AA09625000E92F1 /* IGMacOSScope.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGMacOSScope.swift; sourceTree = "<group>"; };
+		DDF9E96C1B13492A00BA876A /* IGAppWatchScope.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGAppWatchScope.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				DD10923F1AA0817700D434FD /* IGIPadScope.swift */,
 				DD1092411AA0818000D434FD /* IGCarPlayScope.swift */,
 				DDCE56A61AA09625000E92F1 /* IGMacOSScope.swift */,
+				DDF9E96C1B13492A00BA876A /* IGAppWatchScope.swift */,
 			);
 			path = IPAIconGenerator;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 			files = (
 				DD1092211AA078A200D434FD /* ViewController.swift in Sources */,
 				DDCE56A71AA09625000E92F1 /* IGMacOSScope.swift in Sources */,
+				DDF9E96D1B13492A00BA876A /* IGAppWatchScope.swift in Sources */,
 				DD1092421AA0818000D434FD /* IGCarPlayScope.swift in Sources */,
 				DD10921F1AA078A200D434FD /* AppDelegate.swift in Sources */,
 				DD1092401AA0817700D434FD /* IGIPadScope.swift in Sources */,

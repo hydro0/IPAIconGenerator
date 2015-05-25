@@ -16,3 +16,4 @@ let IGIPhoneScope = [
 ]
 
 let iPhoneCount = 9
+let iPhoneMaxSize = 180

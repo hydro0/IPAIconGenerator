@@ -18,3 +18,4 @@ let IGIPadScope = [
 
 
 let iPadCount = 10
+let iPadMaxSize = 152

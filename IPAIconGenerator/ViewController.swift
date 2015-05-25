@@ -16,6 +16,7 @@ class ViewController: NSViewController {
     @IBOutlet weak var CarPlayCB: NSButton!
     @IBOutlet weak var macOsCB: NSButton!
     
+    @IBOutlet weak var appWatchCB: NSButton!
     @IBOutlet weak var generateButton: NSButton!
     @IBOutlet weak var preview: NSImageView!
     
@@ -40,7 +41,7 @@ class ViewController: NSViewController {
         openDlg.canChooseFiles          = true
         openDlg.allowedFileTypes        = fileTypesArray
         openDlg.allowsMultipleSelection = allowsMultipleSelection
-        if openDlg.runModal() == NSOKButton {
+        if openDlg.runModal() == NSModalResponseOK {
             return openDlg.URLs
         }
         else {
@@ -83,6 +84,10 @@ class ViewController: NSViewController {
             count += macOSCount
             scope.extend(IGMacOSScope)
         }
+        if (appWatchCB.state == NSOnState) {
+            count += appWatchCount
+            scope.extend(IGAppWathScope)
+        }
         if (count == 0) {
             return
         }
@@ -103,7 +108,7 @@ class ViewController: NSViewController {
         NSWorkspace.sharedWorkspace().activateFileViewerSelectingURLs(self.arrayUrls!)
     }
     
-    func makeImageAndSave(imageName:NSString, imageSize:CGSize) {
+    func makeImageAndSave(imageName:String, imageSize:CGSize) {
         if let imageSource = CGImageSourceCreateWithURL(self.url!, nil) {
             let options = [kCGImageSourceThumbnailMaxPixelSize as String: max(imageSize.width, imageSize.height), kCGImageSourceCreateThumbnailFromImageIfAbsent as String: true]
             if let cgimg = CGImageSourceCreateThumbnailAtIndex(imageSource, 0, options) {
