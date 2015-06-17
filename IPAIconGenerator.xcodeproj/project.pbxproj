@@ -17,6 +17,7 @@
 		DD1092401AA0817700D434FD /* IGIPadScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD10923F1AA0817700D434FD /* IGIPadScope.swift */; };
 		DD1092421AA0818000D434FD /* IGCarPlayScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1092411AA0818000D434FD /* IGCarPlayScope.swift */; };
 		DDCE56A71AA09625000E92F1 /* IGMacOSScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCE56A61AA09625000E92F1 /* IGMacOSScope.swift */; };
+		DDEA354E1B31B64E00A7358D /* IGDragAndDropImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEA354D1B31B64E00A7358D /* IGDragAndDropImageView.swift */; };
 		DDF9E96D1B13492A00BA876A /* IGAppWatchScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF9E96C1B13492A00BA876A /* IGAppWatchScope.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		DD10923F1AA0817700D434FD /* IGIPadScope.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGIPadScope.swift; sourceTree = "<group>"; };
 		DD1092411AA0818000D434FD /* IGCarPlayScope.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGCarPlayScope.swift; sourceTree = "<group>"; };
 		DDCE56A61AA09625000E92F1 /* IGMacOSScope.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGMacOSScope.swift; sourceTree = "<group>"; };
+		DDEA354D1B31B64E00A7358D /* IGDragAndDropImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGDragAndDropImageView.swift; sourceTree = "<group>"; };
 		DDF9E96C1B13492A00BA876A /* IGAppWatchScope.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGAppWatchScope.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,6 +100,7 @@
 				DD1092411AA0818000D434FD /* IGCarPlayScope.swift */,
 				DDCE56A61AA09625000E92F1 /* IGMacOSScope.swift */,
 				DDF9E96C1B13492A00BA876A /* IGAppWatchScope.swift */,
+				DDEA354D1B31B64E00A7358D /* IGDragAndDropImageView.swift */,
 			);
 			path = IPAIconGenerator;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				DDCE56A71AA09625000E92F1 /* IGMacOSScope.swift in Sources */,
 				DDF9E96D1B13492A00BA876A /* IGAppWatchScope.swift in Sources */,
 				DD1092421AA0818000D434FD /* IGCarPlayScope.swift in Sources */,
+				DDEA354E1B31B64E00A7358D /* IGDragAndDropImageView.swift in Sources */,
 				DD10921F1AA078A200D434FD /* AppDelegate.swift in Sources */,
 				DD1092401AA0817700D434FD /* IGIPadScope.swift in Sources */,
 				DD10923C1AA0801400D434FD /* IGImageModel.swift in Sources */,

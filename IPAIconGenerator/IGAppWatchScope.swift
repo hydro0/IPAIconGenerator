@@ -21,4 +21,4 @@ let IGAppWathScope = [
 ]
 
 
-let appWatchCount = 10
+let appWatchCount = 8

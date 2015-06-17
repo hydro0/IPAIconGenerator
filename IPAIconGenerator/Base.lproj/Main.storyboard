@@ -668,28 +668,18 @@
         <scene sceneID="hIz-AP-VOD">
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="IPAIconGenerator" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="m2S-Jp-Qdl">
+                    <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="309"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pGp-lB-K32">
-                                <rect key="frame" x="179" y="96" width="122" height="19"/>
-                                <buttonCell key="cell" type="roundRect" title="Choose Image" bezelStyle="roundedRect" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ld5-ls-9t4">
+                                <rect key="frame" x="129" y="157" width="223" height="19"/>
+                                <buttonCell key="cell" type="roundRect" title="or click here to choose image" bezelStyle="roundedRect" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ld5-ls-9t4">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="cellTitle"/>
                                 </buttonCell>
                                 <connections>
                                     <action selector="didCickChooseImage:" target="XfG-lQ-9wD" id="fBf-jH-eKl"/>
-                                </connections>
-                            </button>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lqT-o3-qfF">
-                                <rect key="frame" x="179" y="58" width="122" height="19"/>
-                                <buttonCell key="cell" type="roundRect" title="Generate" bezelStyle="roundedRect" alignment="center" enabled="NO" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="BPn-Aq-dUY">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="cellTitle"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="didClickGenerate:" target="XfG-lQ-9wD" id="1fm-Xn-aaU"/>
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R4g-Kh-5Vp">
@@ -713,12 +703,19 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S7h-Uc-rZV">
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S7h-Uc-rZV" customClass="IGDragAndDropImageView" customModule="IPAIconGenerator" customModuleProvider="target">
                                 <rect key="frame" x="163" y="184" width="154" height="105"/>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSApplicationIcon" id="9VC-W1-5RN"/>
+                                <shadow key="shadow" blurRadius="3">
+                                    <size key="offset" width="3" height="3"/>
+                                    <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </shadow>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="DropHere" id="9VC-W1-5RN"/>
+                                <connections>
+                                    <outlet property="dropDelegate" destination="XfG-lQ-9wD" id="pal-NS-Tam"/>
+                                </connections>
                             </imageView>
                             <progressIndicator hidden="YES" fixedFrame="YES" maxValue="100" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="0rf-Fi-3TX">
-                                <rect key="frame" x="163" y="157" width="154" height="20"/>
+                                <rect key="frame" x="163" y="123" width="154" height="20"/>
                             </progressIndicator>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yVs-8B-Adr">
                                 <rect key="frame" x="18" y="50" width="106" height="18"/>
@@ -733,6 +730,16 @@
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lqT-o3-qfF">
+                                <rect key="frame" x="179" y="97" width="122" height="19"/>
+                                <buttonCell key="cell" type="roundRect" title="Generate" bezelStyle="roundedRect" alignment="center" enabled="NO" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="BPn-Aq-dUY">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="cellTitle"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="didClickGenerate:" target="XfG-lQ-9wD" id="1fm-Xn-aaU"/>
+                                </connections>
                             </button>
                         </subviews>
                     </view>
@@ -753,6 +760,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="NSApplicationIcon" width="128" height="128"/>
+        <image name="DropHere" width="220" height="220"/>
     </resources>
 </document>

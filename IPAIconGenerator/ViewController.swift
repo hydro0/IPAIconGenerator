@@ -9,14 +9,14 @@
 import Cocoa
 import ImageIO
 
-class ViewController: NSViewController {
+class ViewController: NSViewController, IGDragAndDropImageViewDelegate {
     
     @IBOutlet weak var IPhoneCB: NSButton!
     @IBOutlet weak var IPadCB: NSButton!
     @IBOutlet weak var CarPlayCB: NSButton!
     @IBOutlet weak var macOsCB: NSButton!
-    
     @IBOutlet weak var appWatchCB: NSButton!
+    
     @IBOutlet weak var generateButton: NSButton!
     @IBOutlet weak var preview: NSImageView!
     
@@ -53,15 +53,19 @@ class ViewController: NSViewController {
         if let urlArr : Array  = openFileWithTypesArray(IGImageModel.extentions(),allowsMultipleSelection: false) {
             self.url = urlArr[0] as? NSURL
             self.preview.image = NSImage(contentsOfURL: self.url!)
-            let height = self.preview.image?.size.height
-            let width = self.preview.image?.size.width
-            if (height != width) {
-                let alert = NSAlert()
-                alert.messageText = "Selected image should be square!"
-                alert.runModal()
-            } else {
-                self.generateButton.enabled = true
-            }
+            self.processImage()
+        }
+    }
+    
+    func processImage() {
+        let height = self.preview.image?.size.height
+        let width = self.preview.image?.size.width
+        if (height != width) {
+            let alert = NSAlert()
+            alert.messageText = "Selected image should be square!"
+            alert.runModal()
+        } else {
+            self.generateButton.enabled = true
         }
     }
 
@@ -105,6 +109,8 @@ class ViewController: NSViewController {
             }
         }
         self.progress.hidden = true
+        self.preview.image = NSImage(named: "DropHere")
+        self.generateButton.enabled = false
         NSWorkspace.sharedWorkspace().activateFileViewerSelectingURLs(self.arrayUrls!)
     }
     
@@ -125,6 +131,11 @@ class ViewController: NSViewController {
             self.progress.doubleValue++;
             self.progress.displayIfNeeded()
         }
+    }
+    
+    func imageDroppedWithPath(path: NSString!) {
+        self.url = NSURL(fileURLWithPath: path as String)
+        self.processImage()
     }
 }
 
