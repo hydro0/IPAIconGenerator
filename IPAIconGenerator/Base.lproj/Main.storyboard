@@ -672,14 +672,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="309"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pGp-lB-K32">
-                                <rect key="frame" x="129" y="157" width="223" height="19"/>
-                                <buttonCell key="cell" type="roundRect" title="or click here to choose image" bezelStyle="roundedRect" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ld5-ls-9t4">
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lqT-o3-qfF">
+                                <rect key="frame" x="179" y="97" width="122" height="19"/>
+                                <buttonCell key="cell" type="roundRect" title="Generate" bezelStyle="roundedRect" alignment="center" enabled="NO" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="BPn-Aq-dUY">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="cellTitle"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="didCickChooseImage:" target="XfG-lQ-9wD" id="fBf-jH-eKl"/>
+                                    <action selector="didClickGenerate:" target="XfG-lQ-9wD" id="Mng-dg-X9T"/>
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R4g-Kh-5Vp">
@@ -730,16 +730,6 @@
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
-                            </button>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lqT-o3-qfF">
-                                <rect key="frame" x="179" y="97" width="122" height="19"/>
-                                <buttonCell key="cell" type="roundRect" title="Generate" bezelStyle="roundedRect" alignment="center" enabled="NO" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="BPn-Aq-dUY">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="cellTitle"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="didClickGenerate:" target="XfG-lQ-9wD" id="1fm-Xn-aaU"/>
-                                </connections>
                             </button>
                         </subviews>
                     </view>

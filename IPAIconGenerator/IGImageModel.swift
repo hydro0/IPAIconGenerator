@@ -43,6 +43,6 @@ class IGImageModel {
     }
     
     class func extentions() -> Array<String> {
-        return ["png"]
+        return ["png", "jpg", "gif"]
     }
 }

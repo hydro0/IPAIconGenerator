@@ -50,6 +50,10 @@ class ViewController: NSViewController, IGDragAndDropImageViewDelegate {
     }
 
     @IBAction func didCickChooseImage(sender: NSButton) {
+        self.chooseImage()
+    }
+    
+    func chooseImage() {
         if let urlArr : Array  = openFileWithTypesArray(IGImageModel.extentions(),allowsMultipleSelection: false) {
             self.url = urlArr[0] as? NSURL
             self.preview.image = NSImage(contentsOfURL: self.url!)
@@ -99,6 +103,7 @@ class ViewController: NSViewController, IGDragAndDropImageViewDelegate {
         self.progress.hidden = false
         self.arrayUrls = Array<NSURL>()
         self.arrayUrls?.append(self.url!)
+        
         for model: IGImageModel in scope {
             
             let scales:Array<IGScale> = model.scales
@@ -136,6 +141,10 @@ class ViewController: NSViewController, IGDragAndDropImageViewDelegate {
     func imageDroppedWithPath(path: NSString!) {
         self.url = NSURL(fileURLWithPath: path as String)
         self.processImage()
+    }
+    
+    func didClickChoose() {
+        self.chooseImage()
     }
 }
 

@@ -11,6 +11,7 @@ import AppKit
 
 @objc protocol IGDragAndDropImageViewDelegate {
     func imageDroppedWithPath(path: NSString!)
+    func didClickChoose()
 }
 
 class IGDragAndDropImageView: NSImageView, NSDraggingDestination {
@@ -21,7 +22,7 @@ class IGDragAndDropImageView: NSImageView, NSDraggingDestination {
         super.drawRect(dirtyRect)
     }
     
-    let fileTypes = ["png"]
+    let fileTypes = IGImageModel.extentions()
     var fileTypeIsOk = false
     var droppedFilePath: String?
     
@@ -51,7 +52,6 @@ class IGDragAndDropImageView: NSImageView, NSDraggingDestination {
     override func performDragOperation(sender: NSDraggingInfo) -> Bool {
         if let board = sender.draggingPasteboard().propertyListForType("NSFilenamesPboardType") as? NSArray {
             if let imagePath = board[0] as? String {
-                // THIS IS WERE YOU GET THE PATH FOR THE DROPPED FILE
                 self.droppedFilePath = imagePath
                 self.dropDelegate.imageDroppedWithPath(self.droppedFilePath)
                 return true
@@ -72,6 +72,12 @@ class IGDragAndDropImageView: NSImageView, NSDraggingDestination {
             }
         }
         return false
+    }
+    
+    override func mouseDown(theEvent: NSEvent) {
+        if (theEvent.clickCount == 1) {
+            self.dropDelegate.didClickChoose()
+        }
     }
     
 }
